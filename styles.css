@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    line-height: 2rem;
+    letter-spacing: .05em;
+    word-spacing: .08em;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+body, html{
+    height:100%
+}
+
+header{
+    display: flex;
+    background-image: url(images/image\ 1.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+   /*  display: flex;
+    align-items: center;
+    justify-content: center; */
+   /*  position: absolute;
+    top: 45%;*/
+    width: fit-content;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 2rem 2rem;
+    color: rgb(77, 28, 28);
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    letter-spacing: .5rem;
+    word-spacing: 1rem;
+}
+
+/* h1 div{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /*background-color: aqua;
+    max-height: 8rem;
+    max-width: 70%;
+    padding: 1rem 0;
+} */
+
+.one{
+    background-color: rgba(153, 82, 1, 0.952);
+    color: aliceblue;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.two{
+    /* padding: 0 45%; */
+}
+.two h2{
+    text-align: center;
+    /* background-color: rgba(153, 82, 1, 0.808); */
+    padding: 2rem 2rem;
+    color: rgb(77, 28, 28);
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    letter-spacing: .3rem;
+}
+
+.three{
+    display: flex;
+    background-image: url(images/image\ 3.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: antiquewhite;
+    padding: 3rem 3rem;
+}
+.menu-item{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    min-width: 100%;
+    text-align: left;
+}
+.menu{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heading{
+    font-size: 1.5rem;
+    border-bottom: .5rem solid white;
+}
+
+h4{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+}
+.item-price{
+    text-align: right;
+}
+
+.item-price::before{
+    content: "---";
+}
+footer{
+    background-color: rgba(153, 82, 1, 0.952);
+    color: aliceblue;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+figure{
+    text-align: center;
+    width: 30%;
+    font-size: 2rem;
+    height: fit-content;
+    border-right: 4px solid wheat;
+}
+
+figcaption{
+    border-top: 4px solid wheat;
+    padding-top: .7rem;
+}
+
+.contact{
+    margin-left: 2rem;
+}
+.contact h2{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.contact-item{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.logo{
+    text-align: left;
+    font-size: 1rem;
+}
+
+.four{
+    display: flex;
+    background-image: url(images/image\ 2.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+    figure{
+        border-right: none; 
+        width: 100%;
+        border-bottom: 4px solid wheat;
+    }
+    footer{
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    
+    figcaption{
+        padding: 0.5rem 0rem;
+    }
+    .contact{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding-top: 1rem;
+        margin-left: 0;
+    }
+}
